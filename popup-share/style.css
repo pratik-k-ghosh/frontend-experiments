@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* default css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root{
+    --shadowColor: rgb(51, 0, 99);
+}
+
+/* body css */
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: rgb(121, 9, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* popup css */
+.popup{
+    width: 35vw;
+    height: 65vh;
+    border-radius: 10px;
+    background-color: rgb(251, 246, 255);
+    box-shadow: 0px 0px 10px 4px var(--shadowColor);
+    -webkit-box-shadow: 0px 0px 10px 4px var(--shadowColor);
+    -moz-box-shadow: 0px 0px 10px 4px var(--shadowColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#closeBtn{
+    border-radius: 50%;
+    width: 35px;
+    background-color: rgb(219, 209, 230);
+    font-weight: bold;
+    border: 1px solid black;
+    outline: none;
+}
