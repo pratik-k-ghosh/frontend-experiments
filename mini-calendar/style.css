@@ -1,0 +1,92 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --color-primary: #0d1226;
+    --color-secondary: #fff;
+    --color-tertiary: #e4a3f5;
+    --color-accent: #ec4b00;
+
+    --calBorderRadius: 4%;
+    --calWidthRatio: 60%;
+
+    --h1: min(3rem, 6vw);
+    --h2: min(1.2rem, 2.2vw);
+    --h3: min(1rem, 1.5vw);
+
+    --gap: 0.5rem;
+}
+
+/* Styling body */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--color-primary);
+    font-family: "Roboto", sans-serif;
+}
+
+/* Styling Calendar */
+.calendar{
+    width: 25%;
+    height: 35%;
+    display: flex;
+    cursor: pointer;
+}
+
+.calendar:hover > .date-day{
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+}
+
+.calendar:hover > .month-year{
+    background-color: var(--color-secondary);
+    border-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.date-day{
+    width: var(--calWidthRatio);
+    height: 100%;
+    background-color: var(--color-secondary);
+    border-radius: var(--calBorderRadius) 0 0 var(--calBorderRadius);
+    display: flex;
+    flex-direction: column;
+    line-height: calc(2rem + var(--gap));
+    justify-content: center;
+    align-items: center;
+}
+
+.month-year{
+    width: calc(100% - var(--calWidthRatio));
+    height: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    justify-content: center;
+    align-items: center;
+    font-size: var(--h3);
+    border: 2px solid var(--color-secondary);
+    border-radius: 0 var(--calBorderRadius) var(--calBorderRadius) 0;
+}
+
+#date{
+    font-size: var(--h1);
+}
+
+#day{
+    font-size: var(--h2);
+}
