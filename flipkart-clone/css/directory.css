@@ -1,0 +1,21 @@
+/* This is the CSS file for directory */
+
+.directory{
+    width: 100%;
+    padding: 4vh 0;
+    background-color: #f5f5f5;
+}
+
+.directory article{
+    color: gray;
+    width: var(--mainContentWidth);
+    padding: 0 1.8vw;
+}
+
+.directory article h4{
+    margin-bottom: 1vh;
+}
+
+.directory article p{
+    font-size: 0.8rem;
+}

@@ -1,0 +1,49 @@
+/* This is the CSS file for all Utility Classes */
+
+.flexAllCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 6vw;
+    height: 6vh;
+    background-color: var(--secondaryBgColor);
+    color: var(--altColor);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: none;
+    border: 2px solid var(--secondaryBgColor);
+    color: var(--secondaryBgColor);
+    font-weight: bold;
+}
+
+button:active{
+    background: orange;
+    border: none;
+    color: var(--altColor);
+    font-weight: normal;
+}
+
+.more{
+    border: 1px solid var(--secondaryBgColor);
+    background-color: var(--secondaryBgColor);
+    color: var(--altColor);
+    border-radius: 3px;
+    padding: 0.2% 0.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.more:hover{
+    background-color: var(--primaryBgColor);
+    color: var(--secondaryColor);
+    font-weight: bold;
+}

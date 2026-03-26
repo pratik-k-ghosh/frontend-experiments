@@ -1,0 +1,76 @@
+/* This is the CSS file for Footer */
+
+footer{
+    height: var(--footerHeight);
+    background-color: var(--altBgColor);
+    color: var(--altColor);
+    flex-direction: column;
+    font-size: var(--footerFontSize);
+}
+
+.footerHeading{
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.footerInfoContainer p, .rightFooter li{
+    margin: 0.8vh 0;
+}
+
+.upperFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+    padding: 7vh 0;
+    border: 1px solid var(--altBgColor);
+}
+
+.upperFooterChild{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.upperFooterChild ul{
+    list-style: none;
+}
+
+.upperFooterChild a{
+    text-decoration: none;
+    color: var(--altColor);
+    font-weight: bold;
+}
+
+.upperFooterChild a:hover{
+    text-decoration: underline;
+}
+
+.leftFooter{
+    width: 70%;
+}
+
+.rightFooter{
+    width: 30%;
+    border-left: 1px solid rgb(76, 76, 76);
+}
+
+.lowerFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    border: 1px solid rgb(76, 76, 76);
+}
+
+.helpCenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6vw;
+    cursor: pointer;
+}

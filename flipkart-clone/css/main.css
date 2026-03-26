@@ -1,0 +1,246 @@
+/* This is the CSS file for Main */
+
+main{
+    min-height: calc(100vh - var(--footerHeight) - var(--headerHeight));
+    width: 100%;
+    flex-direction: column;
+    padding: 2vh 0;
+}
+
+main nav{
+    width: var(--mainContentWidth);
+    height: 20vh;
+    background-color: var(--primaryBgColor);
+    border-radius: 3px;
+    padding: 0 1vw;
+}
+
+main nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+
+main nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 80%;
+    width: 15%;
+    cursor: pointer;
+    border: 1px solid var(--primaryBgColor);
+    border-radius: 3px;
+}
+
+main nav ul li:hover{
+    border-color: var(--gray);
+}
+
+main nav ul li img{
+    max-width: 100%;
+    height: 40%;
+}
+
+main nav ul li span{
+    font-weight: bold;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main nav ul li img{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.banner{
+    width: calc(var(--mainContentWidth) + 2vw);
+    height: 33.3vh;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.banner button{
+    width: 6vh !important;
+    height: 6vw !important;
+    cursor: context-menu;
+}
+
+.bannerController{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bannerController .previousBtn{
+    border-radius: 0 4px 4px 0;
+}
+
+.bannerController .nextBtn{
+    border-radius: 4px 0 0 4px;
+}
+
+.bannerController button:hover{
+    background-color: var(--primaryBgColor);
+    border-color: var(--primaryBgColor);
+    color: var(--gray);
+}
+
+.banner .imageSet{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.9s ease-in-out;
+}
+
+.banner .imageSet .bannerImages{
+    width: 100%;
+    height: 100%;
+    flex: 0 0 100%;
+}
+
+.banner .imageSet .bannerImages img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.bannerImages.show{
+    transform: translateX(0);
+}
+
+.container{
+    width: var(--mainContentWidth);
+    height: 40vh;
+    background-color: var(--primaryBgColor);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1vw;
+}
+
+.containerOfContainer{
+    width: calc(var(--mainContentWidth) + 2vw);
+    height: calc((60vh * 2) - 26vh);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smallContainer{
+    width: calc((100% / 3) - 1vw);
+    height: 100%;
+    background-color: var(--primaryBgColor);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 1vw;
+}
+
+.ads{
+    width: calc((100% / 3) - 4vw);
+    height: 100%;
+    cursor: pointer;
+}
+
+.ads:hover{
+    box-shadow: 1px 1px 8px var(--primaryColor);
+}
+
+.ads img{
+    height: 100%;
+    width: 100%;
+}
+
+.containerHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerTitle{
+    display: inline;
+}
+
+.itemContainer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smallItemContainer{
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1vw;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itemCard{
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    height: 30vh;
+    cursor: pointer;
+}
+
+.itemCard:hover{
+    transform: scale(1.05);
+    border-color: var(--secondaryBgColor);
+    box-shadow: 1px 1px 8px var(--primaryColor);
+}
+
+.item{
+    width: 100%;
+    height: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.itemDetails{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 0;
+}
+
+.itemName::first-letter{
+    text-transform: uppercase;
+}

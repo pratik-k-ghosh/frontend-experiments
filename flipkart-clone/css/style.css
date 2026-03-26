@@ -1,0 +1,41 @@
+/* This is the main CSS file */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+:root{
+    /* Common Variables */
+    --primaryBgColor: #ffffff;
+    --primaryColor: #000000;
+    --altBgColor: #191818;
+    --altColor: #ffffff;
+    --secondaryBgColor: #305ae6;
+    --secondaryColor: #305ae6;
+    --gray: #a9a9a9;
+
+    /* Variables for Header */
+    --searchBoxBgColor: rgb(243, 243, 255);
+    --headerFontSize: 1.03rem;
+    --headerHeight: 10vh;
+
+    /* Variables for Main */
+    --mainContentWidth: 96%;
+
+    /* Variables for Footer */
+    --footerFontSize: 0.8rem;
+    --footerHeight: 60vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f1f2f4;
+    overflow-x: hidden;
+}
